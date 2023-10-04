@@ -7,6 +7,8 @@ document.getElementById("login-btn").addEventListener('click', function () {
         window.location= 'dashboard.html';
     }
     else {
-        alert('Wrong Email or Passwoord!!!');
+        alert(`Wrong Email or Passwoord!!! try with credentials mentioned below
+        mail: test@mail.com
+        password: testPass`);
     }
 });
