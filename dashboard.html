@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="header mt-36 mb-12 space-y-5 text-center">
+            <h1 class="font-bold text-5xl">Welcome to <span class="text-purple-600">Baap er Bank!!!</span>
+            </h1>
+            <h2 class="font-bold text-5xl text-green-600">Here is your Dashboard</h2>
+    </header>
+    <main class="space-y-12">
+        <div class="grid grid-cols-3 gap-7 w-8/12 mx-auto">
+            <div class="px-14 py-12  bg-green-500 rounded-lg text-white font-bold">
+                <h3 class="text-4xl mb-3">Deposited</h3>
+                <h4 class="text-4xl">$ <span id="old-deposit-amount">00</span> </h4>
+            </div>
+            <div class="px-14 py-12  bg-red-500 rounded-lg text-white font-bold">
+                <h3 class="text-4xl mb-3">Withdraw</h3>
+                <h4 class="text-4xl">$ <span id="old-withdraw-amount">00</span> </h4>
+            </div>
+            <div class="px-14 py-12  bg-purple-400 rounded-lg text-white font-bold">
+                <h3 class="text-4xl mb-3">Total Amount</h3>
+                <h4 class="text-4xl">$ <span id="total-amount">1240</span> </h4>
+            </div>
+
+        </div>
+        <div class="grid grid-cols-2 gap-7 w-8/12 mx-auto">
+            <div class="px-14 py-12  bg-green-500 rounded-lg text-white font-bold space-y-5">
+                <h3 class="text-4xl mb-3">Deposit</h3>
+                <input class="w-11/12 px-4 p-3 rounded-lg text-xl text-black" type="number" name="number" id="deposit-amount"
+                    placeholder="$ amount you want to deposit">
+                <button id="deposit-btn" class="bg-white text-green-400 px-6 py-4 font-bold text-2xl rounded-xl">Deposit</button>
+            </div>
+            <div class="px-14 py-12  bg-purple-500 rounded-lg text-white font-bold space-y-5">
+                <h3 class="text-4xl mb-3">Withdraw</h3>
+                <input class="w-11/12 px-4 p-3 rounded-lg text-xl text-black" type="number" name="number" id="withdraw-amount"
+                    placeholder="$ amount you want to withdraw">
+                <button id="withdraw-btn" class="bg-white text-purple-400 px-6 py-4 font-bold text-2xl rounded-xl">Withdraw</button>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
